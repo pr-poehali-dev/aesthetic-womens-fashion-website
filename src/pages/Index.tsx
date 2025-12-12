@@ -128,13 +128,12 @@ const Index = () => {
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               <img 
-                src="https://cdn.poehali.dev/projects/f28aa268-e3fd-4de1-9dc5-cdd73aba4906/files/16c8d3a5-b1aa-4434-a883-2234238893f2.jpg" 
-                alt="ROSE ACTIVE Logo" 
-                className="h-10 w-10 object-contain rounded-full"
+                src="https://cdn.poehali.dev/files/logoza.ru.png" 
+                alt="ViKisport Logo" 
+                className="h-12 object-contain"
               />
-              <h1 className="text-2xl font-bold font-heading text-primary">ROSE ACTIVE</h1>
             </div>
             <div className="hidden md:flex gap-8">
               <button onClick={() => setCurrentPage('home')} className={`transition-colors ${currentPage === 'home' ? 'text-primary font-medium' : 'text-muted-foreground hover:text-primary'}`}>
@@ -538,7 +537,7 @@ const Index = () => {
                   height="450"
                   frameBorder="0"
                   className="w-full"
-                  title="Карта местоположения магазина ROSE ACTIVE"
+                  title="Карта местоположения магазина ViKisport"
                   allowFullScreen
                 />
               </Card>
@@ -655,7 +654,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-bold font-heading mb-4">ROSE ACTIVE</h3>
+              <h3 className="text-xl font-bold font-heading mb-4">ViKisport</h3>
               <p className="text-muted-foreground">
                 Эстетичная спортивная одежда для активного образа жизни
               </p>
@@ -689,7 +688,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-border pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 ROSE ACTIVE. Все права защищены.</p>
+            <p>&copy; 2024 ViKisport. Все права защищены.</p>
           </div>
         </div>
       </footer>
