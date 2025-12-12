@@ -521,6 +521,120 @@ const Index = () => {
                 </form>
               </Card>
             </div>
+
+            <div className="mt-12 animate-fade-in" style={{ animationDelay: '200ms' }}>
+              <Card className="overflow-hidden">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=37.620393,55.753960&z=17&l=map&pt=37.620393,55.753960,pm2rdm"
+                  width="100%"
+                  height="400"
+                  frameBorder="0"
+                  className="w-full"
+                  title="Карта местоположения"
+                />
+              </Card>
+            </div>
+
+            <div className="mt-16">
+              <h2 className="text-4xl font-bold font-heading mb-4 text-center">Наша команда</h2>
+              <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+                Познакомьтесь с профессионалами, которые помогут вам выбрать идеальную спортивную форму
+              </p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <Card className="overflow-hidden hover:shadow-lg transition-all hover:-translate-y-2 animate-scale-in" style={{ animationDelay: '0ms' }}>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/f28aa268-e3fd-4de1-9dc5-cdd73aba4906/files/fcf20d63-bc4c-4569-a26c-f58a69272f54.jpg" 
+                    alt="Анна Петрова" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <CardContent className="p-6 text-center">
+                    <h4 className="text-xl font-bold mb-1">Анна Петрова</h4>
+                    <p className="text-primary font-medium mb-3">Управляющая магазином</p>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      5 лет опыта в индустрии спортивной моды
+                    </p>
+                    <div className="flex justify-center gap-2">
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Instagram" size={18} />
+                      </Button>
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Linkedin" size={18} />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden hover:shadow-lg transition-all hover:-translate-y-2 animate-scale-in" style={{ animationDelay: '100ms' }}>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/f28aa268-e3fd-4de1-9dc5-cdd73aba4906/files/9a3fa860-36e2-4c41-8f68-72ced8f91108.jpg" 
+                    alt="Мария Соколова" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <CardContent className="p-6 text-center">
+                    <h4 className="text-xl font-bold mb-1">Мария Соколова</h4>
+                    <p className="text-primary font-medium mb-3">Фитнес-консультант</p>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Сертифицированный тренер, эксперт по подбору формы
+                    </p>
+                    <div className="flex justify-center gap-2">
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Instagram" size={18} />
+                      </Button>
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Linkedin" size={18} />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden hover:shadow-lg transition-all hover:-translate-y-2 animate-scale-in" style={{ animationDelay: '200ms' }}>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/f28aa268-e3fd-4de1-9dc5-cdd73aba4906/files/a1fbb302-d395-419b-9014-efd022ab862e.jpg" 
+                    alt="Елена Волкова" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <CardContent className="p-6 text-center">
+                    <h4 className="text-xl font-bold mb-1">Елена Волкова</h4>
+                    <p className="text-primary font-medium mb-3">Инструктор йоги</p>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Специалист по йога-аксессуарам и одежде
+                    </p>
+                    <div className="flex justify-center gap-2">
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Instagram" size={18} />
+                      </Button>
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Linkedin" size={18} />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden hover:shadow-lg transition-all hover:-translate-y-2 animate-scale-in" style={{ animationDelay: '300ms' }}>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/f28aa268-e3fd-4de1-9dc5-cdd73aba4906/files/a1a88ebf-6962-4035-b321-42851bcac727.jpg" 
+                    alt="Дмитрий Кузнецов" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <CardContent className="p-6 text-center">
+                    <h4 className="text-xl font-bold mb-1">Дмитрий Кузнецов</h4>
+                    <p className="text-primary font-medium mb-3">Персональный тренер</p>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Консультант по спортивной экипировке для тренировок
+                    </p>
+                    <div className="flex justify-center gap-2">
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Instagram" size={18} />
+                      </Button>
+                      <Button variant="ghost" size="icon">
+                        <Icon name="Linkedin" size={18} />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
           </div>
         </section>
       )}
