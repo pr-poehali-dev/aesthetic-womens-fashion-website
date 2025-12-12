@@ -128,7 +128,14 @@ const Index = () => {
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold font-heading text-primary">ROSE ACTIVE</h1>
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/projects/f28aa268-e3fd-4de1-9dc5-cdd73aba4906/files/16c8d3a5-b1aa-4434-a883-2234238893f2.jpg" 
+                alt="ROSE ACTIVE Logo" 
+                className="h-10 w-10 object-contain rounded-full"
+              />
+              <h1 className="text-2xl font-bold font-heading text-primary">ROSE ACTIVE</h1>
+            </div>
             <div className="hidden md:flex gap-8">
               <button onClick={() => setCurrentPage('home')} className={`transition-colors ${currentPage === 'home' ? 'text-primary font-medium' : 'text-muted-foreground hover:text-primary'}`}>
                 Главная
@@ -523,16 +530,21 @@ const Index = () => {
             </div>
 
             <div className="mt-12 animate-fade-in" style={{ animationDelay: '200ms' }}>
+              <h3 className="text-2xl font-semibold mb-4 text-center">Как нас найти</h3>
               <Card className="overflow-hidden">
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=37.620393,55.753960&z=17&l=map&pt=37.620393,55.753960,pm2rdm"
+                  src="https://yandex.ru/map-widget/v1/?ll=37.620393,55.753960&z=16&l=map&pt=37.620393,55.753960,pm2rdm&mode=search&text=Москва%2C%20улица%20Спортивная%2C%2015"
                   width="100%"
-                  height="400"
+                  height="450"
                   frameBorder="0"
                   className="w-full"
-                  title="Карта местоположения"
+                  title="Карта местоположения магазина ROSE ACTIVE"
+                  allowFullScreen
                 />
               </Card>
+              <p className="text-center text-muted-foreground mt-4">
+                📍 г. Москва, ул. Спортивная, 15 • Ближайшее метро: Спортивная
+              </p>
             </div>
 
             <div className="mt-16">
